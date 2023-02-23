@@ -1,0 +1,176 @@
+/* Цвет основного текста #434455 */
+/* Вторичный цвет текста и кнопки #4D5AE5 */
+/* Акцент при нажатии #404BBF */
+/* Вторичный цвет  #2E2F42 */
+/* Белый цвет #ffffff */
+/* Цвет CLOUD #F4F4FD */
+/* Цвет CORNFLOWER #e7e9fc */
+
+:root {
+  --primary-text-color: #434455;
+  --title-text-color-and-background: #2e2f42;
+  --accent-color: #404bbf;
+  --secondary-text-color: #4d5ae5;
+  --white-color: #ffffff;
+  --color-cloud: #f4f4fd;
+  --color-cornflower: #e7e9fc;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+}
+
+/* ----------Header---------- */
+
+.first-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.second-logo {
+  color: var(--title-text-color-and-background);
+}
+.header-menu-link {
+  font-weight: 500;
+
+  color: var(--title-text-color-and-background);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.contact {
+  font-style: normal;
+  color: var(--title-text-color-and-background);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+/* ----------Hero---------- */
+
+.hero {
+  background: var(--title-text-color-and-background);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  color: var(--white-color);
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  background-color: var(--secondary-text-color);
+  color: var(--white-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/* ----------Section Advantages---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: var(--title-text-color-and-background);
+}
+
+.text {
+  color: var(--primary-text-color);
+}
+
+/* ----------Section Actions - Section Team---------- */
+
+.team {
+  background-color: var(--color-cloud);
+}
+
+.second-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+
+  color: var(--title-text-color-and-background);
+}
+
+/* ----------Section Footer---------- */
+
+.footer {
+  background-color: var(--title-text-color-and-background);
+}
+.second-logo-footer {
+  color: var(--color-cloud);
+}
+
+.footer-text {
+  color: var(--color-cornflower);
+}
+
+/* ----------Section Portfolio---------- */
+
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  background-color: var(--color-cloud);
+  color: var(--secondary-text-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
