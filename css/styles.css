@@ -15,6 +15,26 @@
   --color-cloud: #f4f4fd;
   --color-cornflower: #e7e9fc;
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -33,7 +53,43 @@ body {
   color: var(--primary-text-color);
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ----------Header---------- */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.email {
+  margin-right: 40px;
+}
 
 .first-logo {
   font-family: 'Raleway', sans-serif;
@@ -41,6 +97,9 @@ body {
   font-size: 18px;
   line-height: 1.33;
   text-transform: uppercase;
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   color: var(--secondary-text-color);
 }
