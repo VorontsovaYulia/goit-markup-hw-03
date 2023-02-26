@@ -91,7 +91,7 @@ body {
   display: flex;
 }
 
-.email {
+.contact-menu:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -138,6 +138,10 @@ body {
   color: var(--title-text-color-and-background);
 }
 
+.header-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
@@ -180,7 +184,7 @@ body {
 
   padding: 16px 32px;
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
 
   background-color: var(--secondary-text-color);
   color: var(--white-color);
@@ -216,6 +220,10 @@ body {
 
 .text {
   color: var(--primary-text-color);
+}
+
+.advantages-title {
+  margin-bottom: 8px;
 }
 
 .advantages-list {
@@ -264,6 +272,9 @@ body {
 
 .employees-cards-box {
   padding: 32px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white-color);
 }
@@ -305,12 +316,16 @@ body {
 
 /* ----------Section Portfolio---------- */
 
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .btn-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  padding-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -319,7 +334,6 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding-bottom: 120px;
 }
 
 .portfolio-cards-box {
@@ -344,9 +358,9 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
 
-  border: transparent;
-  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
+  padding: 12px 24px;
 
   background-color: var(--color-cloud);
   color: var(--secondary-text-color);
